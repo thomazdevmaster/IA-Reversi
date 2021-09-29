@@ -1,0 +1,256 @@
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+    color: rgb(94, 63, 202);
+    background-color: rgb(47, 2, 53);
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: rgb(196, 245, 196);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+header div {
+    border: rgb(87, 3, 90) solid 1px;
+    padding: 10px;
+}
+
+header .title {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+}
+
+.title p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tabuleiroContainer {
+    min-width: 400px;
+}
+
+.tabuleiro {
+    margin: auto;
+}
+
+.tabuleiro td {
+    width: 40px;
+    height: 40px;
+    border-radius: 15%;
+    background-color: rgb(51, 157, 184);
+}
+
+.tabuleiro td div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: auto;
+    transition: 0.8s background-color;
+}
+
+.tabuleiro td.black div {
+    background-color: rgb(0, 0, 0);
+}
+
+.legenda_black {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: rgb(0, 0, 0);
+}
+
+.legenda_white {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: rgb(255, 255, 255);
+}
+ 
+.player1 {
+    display: flex;
+    align-items: center;
+    color: rgb(51, 16, 209);
+    padding: 10px;
+    border-bottom: black 1px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.player1 span {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: 10px;
+    background-color: black;
+    color: yellow;
+}
+
+.tabuleiro td.white div {
+    background-color: white;
+}
+
+.game-controls{
+    position:relative;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.entradas {
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+select, input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: yellowgreen;
+    color: white;
+}
+
+
+#restartButton {
+    width: 95%;
+    padding: 15px;
+    color: white;
+    background-color: #4f055e;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#restartButton:hover {
+    color: #ffffff;
+    background-color: rgb(246, 32, 253);
+}
+
+#restartButton:active {
+    color: #d91bff;
+    background-color: white;
+}
+
+#resetButton {
+    width: 95%;
+    padding: 15px;
+    color: white;
+    background-color: #906f97;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    color: #ffffff;
+    background-color: rgb(240, 159, 243);
+}
+
+#resetButton:active {
+    color: #6f0e85;
+    background-color: white;
+}
+
+.score {
+    width: 100%;
+    padding: 10px ;
+}
+
+.turn {
+    text-align: center;
+    background-color: rgb(43, 7, 63);
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.winner {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: #d7d7d7;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 36px 17px;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #d6aaf3;
+    border-radius: 20px;
+}
+
+.content_left {
+    position: static;
+    width: 250px;
+    height: 717px;
+    left: 17px;
+    top: 36px;
+    background: #B3FFF1;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+.content_left h2, .content_right h2 {
+    text-align: center;
+    background-color: rgb(43, 7, 63);
+    margin: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.content_center {
+    position: static;
+    width: 740px;
+    height: 717px;
+    left: 303px;
+    top: 36px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content_right {
+    position: static;
+    width: 250px;
+    height: 717px;
+    left: 1111px;
+    top: 36px;
+    background: #B3FFF1;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,73 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>REVERSI</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/table.css">
+</head>
+
+<body>
+    <header>
+        <div><img src="./assets/logocc.png" alt="dcc" width="200px"></div>
+        <div class="title">
+            <p style="margin-top: 0; font-size: 2rem;">JOGO REVERSI (OTHELO)</p>
+            <p>GCC128 - Inteligência Artificial</p>
+            <p>Thomaz Flanklin de Souza Jorge - Primeiro Semestre 2021</p>
+        </div>
+        <div><img src="./assets/logo-ufla-transparente.png" alt="ufla" width="200px"></div>
+    </header>
+    <div class="content">
+        <div class="content_left">
+            <h2 style="text-align: center;">configurar</h2>
+            <div class="entradas">
+                <label for="nome" class="label">Nome</label>
+                <input type="text" id="nome" class="form" placeholder="HUMANO">
+                <label for="nivel">Selecione o nível</label>
+                <select name="nivel" id="nivel">
+                    <option value="1" selected>inicial</option>
+                    <option value="2">intermediário</option>
+                    <option value="3">avançado</option>
+                </select>
+                <label for="nivel">Tamanho do tabuleiro</label>
+                <select name="tam" id="tam">
+                    <option value="6">6x6</option>
+                    <option value="8" selected>8x8</option>
+                    <option value="10">10x10</option>
+                </select>
+            </div>
+            <button id="restartButton">INICIAR</button>
+            <button id="resetButton">REDEFINIR</button>
+        </div>
+        <div class="content_center">
+            <div class="turn" id="turn"></div>
+            <div class="tabuleiroContainer"></div>
+            <div class="winner"></div>
+            <div class="relatorio"></div>
+            <div class="duracao"></div>
+        </div>        
+        <div class="content_right">
+            <h2 style="text-align: center;">PLACAR</h2>
+            <div class="score">
+                <div class="player1">
+                    <div class="legenda_black"></div>
+                    <div id="jogador">Humano:</div>
+                    <span id="score1"></span>
+                </div>
+                <div class="player1">
+                    <div class="legenda_white"></div>
+                    <div>Computador</div>
+                    <span id="score2"></span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/lib/jquery-3.5.0.min.js"></script>
+    <script src="js/Tabuleiro.js"></script>
+    <script src="js/Jogador.js"></script>
+    <script src="js/IA.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
