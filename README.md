@@ -1,6 +1,8 @@
 # IA-Reversi / Othelo
 ## Jogo implementado com base no algorítmo MinMax
 
+|  [Ojogo](#o-jogo)  |[Como jogar](#como-jogar)
+
 ### O jogo
 #### História
 Reversi, também conhecido como Othello é um jogo cuja história ninguém sabe ao certo.
