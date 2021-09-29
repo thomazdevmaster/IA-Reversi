@@ -1,7 +1,7 @@
 # IA-Reversi / Othelo
 ## Jogo implementado com base no algorítmo MinMax
 ---
-| [Ojogo](#o-jogo) | [Como jogar](#como-jogar) | [Minimax](#minimax) | [Poda Alfa-Beta](#poda-alfa-e-beta) |
+| [Ojogo](#o-jogo) | [Como jogar](#como-jogar) | [Minimax](#minimax) | [Poda Alfa-Beta](#poda-alfa-beta) |
 ---
 ### O jogo
 ---
