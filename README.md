@@ -1,9 +1,10 @@
 # IA-Reversi / Othelo
 ## Jogo implementado com base no algorítmo MinMax
-
-|  [Ojogo](#o-jogo)  |[Como jogar](#como-jogar)
-
+---
+| [Ojogo](#o-jogo) | [Como jogar](#como-jogar) | [Minimax](#minimax) | [Poda Alfa-Beta](#poda-alfa-e-beta) |
+---
 ### O jogo
+---
 #### História
 Reversi, também conhecido como Othello é um jogo cuja história ninguém sabe ao certo.
 É um jogo que utiliza um tabuleiro de 8 x 8 casas para dois jogadores com peças em forma de discos com um lado preto e outro branco que podem ser viradas no decorrer do jogo.
@@ -14,9 +15,9 @@ O tabuleiro usado nos torneios internacionais vem do jogo Othello inventado pelo
 
 ![image](https://user-images.githubusercontent.com/56375981/135178637-2dc9932f-70cc-4e8f-b766-414a645e5ea0.png)
 
-
+---
 ### Como jogar
-
+---
 *Caso tenha preguiça de ler, veja o [video](https://youtu.be/6tG4veF4Xvw)*
 
 No caso do tabuleiro real, é jogado entre 2 jogadores.
@@ -54,9 +55,9 @@ No caso desta implementação, o jogador humano (peças pretas) compete contra o
 ![gif](https://user-images.githubusercontent.com/56375981/135181007-5be4cfcf-d948-4cf2-b68b-1596beb2781b.gif)
 
 - Para realizar a busca do movimento realizado por meio de inteligência artificial, foi utilizado um algoritmo conhecido como MiniMax com poda alfa e beta
-
+---
 ## MiniMax
-
+---
 O algoritmo Mini-max é um algoritmo recursivo ou de retrocesso que é usado na tomada de decisões e na teoria dos jogos. Ele fornece um movimento ideal para o jogador, supondo que o oponente também esteja jogando de forma otimizada.
 
 O algoritmo Mini-Max usa recursão para pesquisar na árvore do jogo.
@@ -115,8 +116,9 @@ O algoritmo Ótimo -Mín-Máx é ótimo se ambos os oponentes estão jogando de 
 Complexidade de tempo - como ele executa DFS para a árvore do jogo, então a complexidade de tempo do algoritmo Min-Max é ***O (b^m)*** , onde b é o fator de ramificação da árvore do jogo e m é a profundidade máxima da árvore.
 
 Complexidade do espaço - A complexidade do espaço do algoritmo Mini-max também é semelhante ao DFS, que é ***O (bm)*** .
-
+---
 ### Poda Alfa-Beta
+---
 **Limitação do algoritmo minimax:**
 A principal desvantagem do algoritmo minimax é que ele fica muito lento para jogos complexos como xadrez, go, etc. Esse tipo de jogo tem um grande fator de ramificação, e o jogador tem muitas opções para decidir. Essa limitação do algoritmo minimax pode ser melhorada a partir da poda alfa-beta.
 
