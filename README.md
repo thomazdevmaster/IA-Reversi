@@ -1,5 +1,6 @@
 # IA-Reversi / Othelo
 ## Jogo implementado com base no algorítmo MinMax
+
 ---
 | [Ojogo](#o-jogo) | [Como jogar](#como-jogar) | [Minimax](#minimax) | [Poda Alfa-Beta](#poda-alfa-beta) |
 ---
@@ -179,3 +180,5 @@ No nó C, α = 3 e β = + ∞, e os mesmos valores serão repassados ao nó F.
 - [história do jogo - Magazine Luiza](https://www.magazineluiza.com.br/reversi-othello-jogo-de-tabuleiro-em-madeira-mitra/p/4935985/br/bjdt/)
 - [Como jogar - Federação Brasileira de Othelo FBO](https://www.worldothello.org/about/about-othello/othello-rules/portugues-brasil)
 - [Algoritmo Mini-Max em Inteligência Artificial](https://www.javatpoint.com/mini-max-algorithm-in-ai)
+
+ * Implementação do jogo foi baseado no trabalho de Jean Marcos Silva Santos [Busca com Adversários - Usando o método de busca minimax para o jogo othelo](https://github.com/jhemarcos/minimax-othello/blob/master/minimax-othello-jean-santos.pdf) - ICMC - USP São Carlos - 2020
